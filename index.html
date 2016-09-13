@@ -1,4 +1,4 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -71,7 +71,7 @@ d<!DOCTYPE html>
 <body id="page-top">
     <!-- Navigation -->
     <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -111,7 +111,7 @@ d<!DOCTYPE html>
         </div>
     </header>
     <!-- The Wedding BEGINS -->
-   <section id="wedding" class="portfolio-carousel wow fadeIn">
+   <section id="wedding" class="portfolio-carousel wow fadeIn" style="background-image: url('assets/img2/foodlabels.jpg');">
         <div class="item" style="background-color">
             <div class="container-fluid">
                 <div class="row">
@@ -176,7 +176,7 @@ d<!DOCTYPE html>
                     <p><a href="mailto:keegan@keeganjoyce.com">rsvp@lavenderbluecottage.com</a>
                 </div>
             </div>
-            
+
             </div>
             <div class="row copyright">
                 <div class="col-lg-12">
@@ -192,13 +192,15 @@ d<!DOCTYPE html>
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h2 id="rsvpModalLabel" class="modal-title text-center">
-                        <span class="title script display-block"><span class="title-deco-left"></span><span class="title-text">RSVP</span><span class="title-deco-right"></span></span>
-                        <span class="subtitle display-block">Come and celebrate. <br> Please RSVP by November 7, 2016</span>
+                        Come and celebrate.
                     </h2>
+                    <h3 class="modal-subtitle text-center">
+                        Please RSVP by November 7, 2016
+                    </h3>
 
                 </div><!--//modal-header-->
                 <div class="modal-body">
-                    <form id="rsvp-form" class="rsvp-form form" method="post" action="mailer.php">
+                    <form id="rsvp-form" class="rsvp-form form" method="post" action="https://formspree.io/rsvp@bluelavendercottage.com">
                         <div id="form-messages" class="text-center"></div>
                         <div class="row text-left">
                             <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
@@ -236,7 +238,7 @@ d<!DOCTYPE html>
                                 </div>
                             </div>
 
-                            <div class="guests-group col-md-6 col-sm-6 col-xs-12 form-group">
+                            <div class="guests-group col-xs-12 form-group">
                                 <div class="form-group-inner">
                                     <label for="cguests">Are you bringing a guest?</label>
                                     <select class="form-control" id="cguests" name="guests" aria-required="true" required>

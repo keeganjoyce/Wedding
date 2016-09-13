@@ -298,14 +298,11 @@ header {
   background-color: #ccccff;
   background: no-repeat center center;
   background-attachment: scroll;
-  -webkit-background-size: contain;
-  -moz-background-size: cover;
-  background-size: contain;
-  -o-background-size: cover;
+  background-size: 70%;
   padding: 100px 0;
   padding-top: 30px;
 }
-header .intro-content { 
+header .intro-content {
   color: white;
   text-align: center;
   position: relative;
@@ -336,12 +333,12 @@ header .scroll-down {
 header .scroll-down .btn {
   height: 50px;
   width: 50px;
-  border: 2px solid white;
+  border: 2px solid gray;
   border-radius: 100% !important;
   line-height: 50px;
   padding: 0;
   letter-spacing: normal;
-  color: white;
+  color: gray;
   font-size: 30px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -648,6 +645,9 @@ aside.cta-quote span.quote {
   padding: 0;
   color: white;
   background-color: #ccccff;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .portfolio-carousel .item {
   background-color: #ccccff;
@@ -1228,4 +1228,8 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
 
 .slightly-poppier {
   font-size: 20px;
+}
+
+.modal-rsvp .modal-dialog {
+  width: 90%;
 }
