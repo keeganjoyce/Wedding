@@ -320,10 +320,6 @@ header .brand-name-subtext {
   line-height: 20px;
   font-weight: 300;
 }
-header img {
-  max-width: 150px;
-  max-height: 150px;
-}
 header .scroll-down {
   position: absolute;
   width: 100%;
@@ -344,6 +340,11 @@ header .scroll-down .btn {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.intro-emblem {
+  width: 100%;
+}
+
 header .scroll-down .btn:hover {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.5);
@@ -375,10 +376,6 @@ header .scroll-down .btn:hover {
   header .brand-name-subtext {
     font-size: 30px;
     line-height: 30px;
-  }
-  header img {
-    max-width: 300px;
-    max-height: 300px;
   }
 }
 @media (min-width: 1025px) {
