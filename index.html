@@ -86,17 +86,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
                     <li>
-                        <a class="page-scroll" href="#wedding">Wedding</a>
+                        <a class="page-scroll" href="#rsvp">RSVP</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#rsvp">RSVP</a>
+                        <a class="page-scroll" href="#wedding">Wedding Information</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#registry">Registry</a>
                     </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#merchandise">Merchandise</a>
-                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -111,7 +108,21 @@
             <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
         </div>
     </header>
-    <!-- The Wedding BEGINS -->
+    <!-- RSVP BEGIN -->
+    <section id="rsvp" class="bg-dark   ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="text-center">
+                        <h1>Répondez s'il vous plaît</h1>
+                        <hr class="colored">
+                        <a class="btn btn-primary btn-primary" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Here</a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--RSVP ENDS -->
+    <!-- THE WEDDING BEGINS -->
    <section id="wedding" class="portfolio-carousel wow fadeIn" style="background-image: url('assets/lavenderbg.jpg');">
         <div class="item" style="background-color">
             <div class="container-fluid">
@@ -141,21 +152,22 @@
             </div>
         </div>
     </section>
-    <!-- Music ENDS -->
-    <!-- RSVP BEGIN -->
-    <section id="rsvp" class="bg-grey">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="text-center">
-                        <h1>Répondez s'il vous plaît</h1>
-                        <hr class="colored">
-                        <a class="btn btn-primary btn-primary" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Here</a></a>
-                    </div>
+    <!-- THE WEDDING ENDS -->
+    <!-- REGISTRY BEGINS -->
+    <section id="registry" class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center">
+                    <h1>Registry</h1>
+                    <hr class="colored">
+                    <p class="slightly-poppier">If you would like to gift Gemma & Ben something for their wedding day, there is a registry open at <a href="http://www.google.com" target="_blank">The Registry Centre</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="bg-dark">
+    <!-- REGISTRY ENDS -->
+    <!-- FOOTER BEGINS -->
+    <footer class="bg-grey">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-12 contact-details">
@@ -172,6 +184,7 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER ENDS -->
     <!-- RSVP Modal -->
     <div id="rsvp-modal" class="modal modal-rsvp"  tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
