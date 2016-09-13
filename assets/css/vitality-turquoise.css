@@ -643,7 +643,7 @@ aside.cta-quote span.quote {
   color: white;
   background-color: #ccccff;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .portfolio-carousel .item {
