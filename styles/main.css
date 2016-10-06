@@ -90,6 +90,32 @@ hr {
   background: #f7f7f9;
 }
 
-.carousel-control {
+.control {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
   width: 5%;
+}
+.control.left { left: 0; }
+.control.right { right: 0; }
+
+.slide-indicator {
+  border-bottom: 2px solid transparent;
+  color: #373a3c;
+}
+
+.slide-indicator:hover {
+  color: #578396;
+  text-decoration: none;
+}
+.slide-indicator:focus {
+  color: #373a3c;
+  text-decoration: none;
+}
+.slide-indicator.active {
+  color: #578396;
+  border-bottom-color: #578396;
 }
