@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Dense";
+  font-weight: 400;
+  src: url('../fonts/Dense-Regular.eot');
+  src: url('../fonts/Dense-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Dense-Regular.woff') format('woff'),
+       url('../fonts/Dense-Regular.ttf')  format('truetype'),
+       url('../fonts/Dense-Regular.svg#Dense-Regular') format('svg');
+}
+
+body {
+  font-family: "Dense", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #578396;
+  transition: all 0.4s ease;
+}
+a:hover { color: #1D4F64; }
+.btn-primary {
+  background-color: #1D4F64;
+  border-color: #1D4F64;
+}
+
+.navbar-nav .nav-item {
+  font-size: 24px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #000000;
+  border-bottom: 2px solid transparent;
+  padding: 6.8px 12px 2.8px;
+  margin-bottom: 2px;
+  transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+  border-bottom-color: #B8D0DA;
+}
+
+.nav-spacer {
+  height: 66px;
+}
+
+@media (min-width: 544px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+    float: none;
+  }
+}
+
+.Hero {
+  max-width: 100%;
+  max-height: 95vh;
+}
+
+.row {
+  padding: 20px 0;
+}
+
+p {
+  font-size: 22px;
+}
+
+.bg-DustyBlue {
+  padding: 20px 10px;
+  background: #B8D0DA;
+  min-height: 400px;
+}
+
+hr {
+  border-top-color: rgba(0,0,0,0.3);
+}
+
+.no-really {
+  text-decoration: underline;
+}
+
+.banner {
+  padding: 20px 0;
+}
+
+.bg-dark {
+  background: #f7f7f9;
+}
+
+.carousel-control {
+  width: 5%;
+}
