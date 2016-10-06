@@ -23,7 +23,7 @@
         <a class="nav-link" href="#gifts">Gifts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#rsvp">RSVP</a>
+        <a class="nav-link" href="#rsvp" data-toggle="modal" data-target="#rsvp">RSVP</a>
       </li>
     </ul>
   </div>
@@ -72,7 +72,7 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <p><a href="#" class="btn btn-primary btn-lg">RSVP</a><br/><br/></p>
+      <p><a href="#rsvp" data-toggle="modal" data-target="#rsvp" class="btn btn-primary btn-lg">RSVP</a><br/><br/></p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.2019790285663!2d144.99599841548763!3d-38.367448723700555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad5c67916f8b243%3A0xd0556a465b449bb3!2sRed+Hill+Consolidated+School%2C+341+Arthurs+Seat+Rd%2C+Red+Hill+VIC+3937!5e0!3m2!1sen!2sau!4v1475716172567" width="100%" height="450" frameborder="0" style="border:0" style="pointer-events: none;" allowfullscreen></iframe>
     </div>
   </div>
@@ -137,3 +137,52 @@
 <script src="scripts/main.js"></script>
 </body>
 </html>
+
+<div class="modal fade" id="rsvp" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <form method="post" action="https://formspree.io/rsvp@bluelavendercottage.com"><div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Repondez s'il vous plait</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="Name">Your Name:</label>
+          <input type="text" class="form-control" id="Name" name="Name" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label for="Email">Your Email:</label>
+          <input type="text" class="form-control" id="Email" name="Email" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+          <label for="Attending">Will you be joining us?</label>
+          <select class="form-control" id="Attending" name="Attending">
+            <option>Yes, I will be joining you on 22 December 2016</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Guests">Guests:</label>
+          <textarea class="form-control" id="Guests" name="Guests" placeholder="Names of Guests" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="Breakfast">Will you join us for breakfast on the Peninsula the following day?</label>
+          <select class="form-control" id="Breakfast" name="Breakfast">
+            <option>Yes, I will be joining you for breakfast</option>
+            <option>No</option>
+          </select>
+          <label>We will be having breakfast at Bistro La Provence, Friday 23rd December at 11am</label>
+        </div>
+        <div class="form-group">
+          <label for="Additional">Additional Information:</label>
+          <textarea class="form-control" id="Additional" name="Additional" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-lg btn-primary">SEND RSVP</button>
+      </div>
+    </div></form><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

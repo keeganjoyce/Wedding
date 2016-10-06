@@ -119,3 +119,8 @@ hr {
   color: #578396;
   border-bottom-color: #578396;
 }
+
+label {
+  font-size: 22px;
+  width: 100%;
+}
