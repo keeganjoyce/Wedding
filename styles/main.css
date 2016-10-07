@@ -19,10 +19,17 @@ a {
 }
 a:hover { color: #1D4F64; }
 .btn-primary {
-  background-color: #1D4F64;
-  border-color: #1D4F64;
+  background-color: #475364;
+  border-color: #475364;
   border-radius: 0.3rem;
   color: #FFFFFF !important;
+}
+.btn-primary:hover,.btn-primary:focus {
+  background-color: #4E6687;
+  border-color: #4E6687;
+}
+.btn {
+  font-size: 24px;
 }
 .btn-lg {
   font-size: 30px;
@@ -82,11 +89,19 @@ p {
   flex-wrap: wrap;
 }
 
+.Box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #B8D0DA;
+  background-clip: content-box;
+}
+
 .bg-DustyBlue {
   padding: 20px 10px;
   background: #B8D0DA;
   margin-bottom: 10px;
-  height: 100%;
+  width: 100%;
 }
 
 hr {
