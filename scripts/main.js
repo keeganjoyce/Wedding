@@ -36,3 +36,27 @@ $('#carousel').on('slid.bs.carousel', function() {
 });
 
 $('.sticky').Stickyfill();
+
+$('.form').on('submit', function(e) {
+    e.preventDefault();
+    var record = {
+        Name: $('#Name').val(),
+        Email: $('#Email').val(),
+        Attending: $('#Attending').val(),
+        Guests: $('#Guests').val(),
+        Breakfast: $('#Breakfast').val(),
+        Additional: $('#Additional').val()
+    };
+
+    $.ajax('https://sheetsu.com/apis/v1.0/a3545ebaa831', {
+        method: 'post',
+        dataType: 'json',
+        data: record,
+        success: function() {
+            $('#rsvp').modal('hide');
+            $('#displayName').text(record.Name);
+            $('#thanks').modal('show');
+            setTimeout(function() { $('#thanks').modal('hide'); }, 1000);
+        }
+    });
+});
