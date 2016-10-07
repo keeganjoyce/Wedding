@@ -34,3 +34,5 @@ $('#carousel').on('slid.bs.carousel', function() {
     var id = $(this).find('.carousel-item.active').attr('id');
     $('.slide-indicator[data-carousel="#' + id + '"]').addClass('active');
 });
+
+$('.sticky').Stickyfill();

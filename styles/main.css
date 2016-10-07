@@ -21,6 +21,11 @@ a:hover { color: #1D4F64; }
 .btn-primary {
   background-color: #1D4F64;
   border-color: #1D4F64;
+  border-radius: 0.3rem;
+  color: #FFFFFF !important;
+}
+.btn-lg {
+  font-size: 30px;
 }
 
 .navbar-nav .nav-item {
@@ -57,7 +62,7 @@ a:hover { color: #1D4F64; }
 
 .Hero {
   max-width: 100%;
-  max-height: 95vh;
+  max-height: 84vh;
 }
 
 .row {
@@ -68,10 +73,20 @@ p {
   font-size: 22px;
 }
 
+.Boxes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .bg-DustyBlue {
   padding: 20px 10px;
   background: #B8D0DA;
-  min-height: 400px;
+  margin-bottom: 10px;
+  height: 100%;
 }
 
 hr {
@@ -123,4 +138,11 @@ hr {
 label {
   font-size: 22px;
   width: 100%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
