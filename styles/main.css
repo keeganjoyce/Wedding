@@ -93,6 +93,13 @@ hr {
   border-top-color: rgba(0,0,0,0.3);
 }
 
+.banner-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .no-really {
   text-decoration: underline;
 }
