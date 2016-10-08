@@ -65,6 +65,8 @@ a:hover { color: #1D4F64; }
     display: inline-block;
     float: none;
   }
+}
+@media (max-width: 545px) {
   a.anchor {
     top: -400px;
   }
