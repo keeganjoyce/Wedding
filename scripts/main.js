@@ -60,3 +60,7 @@ $('.form').on('submit', function(e) {
         }
     });
 });
+
+$('a[href^="#"]').on('click', function(e) {
+    $('#main-menu').collapse('hide');
+});
