@@ -65,6 +65,9 @@ a:hover { color: #1D4F64; }
     display: inline-block;
     float: none;
   }
+  a.anchor {
+    top: -400px;
+  }
 }
 
 .Hero {
@@ -173,7 +176,7 @@ label {
 a.anchor {
   display: block;
   position: absolute;
-  top: -280px;
+  top: -80px;
   visibility: hidden;
 }
 
