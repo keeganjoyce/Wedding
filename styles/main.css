@@ -170,16 +170,12 @@ label {
   z-index: 999;
 }
 
-a.anchor {
-  display: block;
-  position: absolute;
-  top: -80px;
-  visibility: hidden;
-}
-@media (max-width: 545px) {
-  a.anchor {
-    top: -400px;
-  }
+a.anchor:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
 }
 
 body.modal-open { position: fixed; }
