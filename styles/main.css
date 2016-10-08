@@ -121,6 +121,7 @@ hr {
 
 .banner {
   padding: 20px 0;
+  position: relative;
 }
 
 .bg-dark {
@@ -171,7 +172,9 @@ label {
 
 a.anchor {
   display: block;
-  position: relative;
+  position: absolute;
   top: -80px;
   visibility: hidden;
 }
+
+body.modal-open { position: fixed; }
