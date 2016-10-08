@@ -172,9 +172,8 @@ label {
 
 a.anchor {
   display: block;
-  position: absolute;
-  top: -80px;
-  visibility: hidden;
+  padding-top: 90px;
+  margin-top: -90px;
 }
 
 body.modal-open { position: fixed; }
