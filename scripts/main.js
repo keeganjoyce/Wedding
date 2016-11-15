@@ -36,6 +36,7 @@ $('#carousel').on('slid.bs.carousel', function() {
 });
 
 $('.sticky').Stickyfill();
+$('#rsvp .loading').hide();
 
 $('.form').on('submit', function(e) {
     e.preventDefault();
@@ -48,16 +49,29 @@ $('.form').on('submit', function(e) {
         Additional: $('#Additional').val()
     };
 
+    $('#rsvp .modal-body, #rsvp .modal-footer').slideUp();
+    $('#rsvp .loading').slideDown();
+
     $.ajax('https://sheetsu.com/apis/v1.0/a3545ebaa831', {
         method: 'post',
         dataType: 'json',
         data: record,
         success: function() {
             $('#rsvp').modal('hide');
+            $('#rsvp .modal-body, #rsvp .modal-footer').slideDown();
+            $('#rsvp .loading').hide();
             $('#displayName').text(record.Name);
             $('#thanks').modal('show');
             setTimeout(function() { $('#thanks').modal('hide'); }, 1000);
-        }
+        },
+        error: function() {
+            $.ajax({
+                url: "https://formspree.io/maddi@maddijoyce.com",
+                method: "POST",
+                data: record,
+                dataType: "json",
+            });
+        },
     });
 });
 
